@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <main>
+    <table class="table">
+      <tr class="table__row">
+        <td class="table__cell c1" id="c1"></td>
+        <td class="table__cell c2" id="c2"></td>
+        <td class="table__cell c3" id="c3"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__cell c4" id="c4"></td>
+        <td class="table__cell c5" id="c5"></td>
+        <td class="table__cell c6" id="c6"></td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__cell c7" id="c7"></td>
+        <td class="table__cell c8" id="c8"></td>
+        <td class="table__cell c9" id="c9"></td>
+      </tr>
+    </table>
+  </main>
+
+  <!-- modal -->
+  <div class="modal-parent">
+    <div class="modal">
+      <table class="modal-table">
+        <tr class="modal-table__row">
+          <td class="modal-table__cell c1"></td>
+          <td class="modal-table__cell c2"></td>
+          <td class="modal-table__cell c3"></td>
+        </tr>
+        <tr class="modal-table__row">
+          <td class="modal-table__cell c4"></td>
+          <td class="modal-table__cell c5"></td>
+          <td class="modal-table__cell c6"></td>
+        </tr>
+        <tr class="modal-table__row">
+          <td class="modal-table__cell c7"></td>
+          <td class="modal-table__cell c8"></td>
+          <td class="modal-table__cell c9"></td>
+        </tr>
+      </table>
+
+      <h1 class="winner"></h1>
+
+      <button class="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

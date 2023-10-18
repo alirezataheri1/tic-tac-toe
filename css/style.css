@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table__cell {
+    width: 7rem;
+    height: 7rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.c5 {
+    border: 2px solid #fff;
+}
+
+.c1 {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.c3 {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.c7 {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.c9 {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+/* modal */
+.modal-parent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    color: #fff;
+    
+    display: none; 
+}
+
+.modal {
+    background: #000;
+    width: 80%;
+    padding: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: arial;
+    position: relative;
+    animation: 1s drop;
+    text-align: center;
+}
+@keyframes drop {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+.modal-table {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.modal-table__cell {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.5rem;
+}
+
+.winner {
+    margin-block: 1rem;
+    color: green;
+}
+
+.play-again {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
